@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Quiz-Grupa 3</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="css/quiz2.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="quizContainer" class="container">
+			<div class="title">HTML</div>
+			<div id="question" class="question"></div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+			<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Sledeće pitanje</button>
+			
+		</div>
+		<div id="result" class="container result" style="display:none;">
+			
+		</div>
+		<div id="kraj" class="novaigra" style="display:none;">
+			<button id="finishButton" class="next-btn" onclick="window.location.href = 'home.html'" >Nova igra</button>
+		</div>
+		
+			  <div class="footer">
+        <p>© 2018 Grupa Tri All Rights Reserved</p>
+        
+        </div> 
+		<script src="js/htmlquestion.js"></script>
+		<script src="js/quiz-script.js"></script>
+</body>
+
+</html>

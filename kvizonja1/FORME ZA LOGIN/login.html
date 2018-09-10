@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		
+    </head>
+    <body id="demo">
+        <div class="container">
+            <!-- Codrops top bar -->
+
+            <header>
+                
+            </header>
+ <section>        
+    <div id="container_demo" >
+        <!--hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4 -->
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="tologin"></a>
+        <div id="wrapper">
+          
+            <div id="login" class="animate form">
+                 <form action = "http://738t121.mars-e1.mars-hosting.com/kvizonja1/FORME%20ZA%20LOGIN/login" method = "POST">
+                
+                    <h1></h1> 
+                    <p> 
+                        <label for="email" class="uname" data-icon="u" > Vasa e-adresa </label>
+                        <input id="email" name="email" required="required" type="text" placeholder="email"/>
+                    </p>
+                    <p> 
+                        <label for="password" class="youpasswd" data-icon="p"> Vasa sifra </label>
+                        <input id="password" name="password" required="required" type="password" placeholder="password" /> 
+                    </p>
+                
+                    <p class="login button"> 
+                       <input type="submit" value="Prijava"/>
+                      </p>
+                        <p class="change_link">
+                        Niste se registrovali ?
+                        <a href="#toregister" class="to_register">Pridruzite nam se</a>
+                      </p>
+                    
+               </form>
+               
+            </div>
+
+            <div id="register" class="animate form">
+               <!-- action="http://738t121.mars-e1.mars-hosting.com/FORME ZA LOGIN/register" method = "POST" -->
+                <form action = "http://738t121.mars-e1.mars-hosting.com/kvizonja1/FORME%20ZA%20LOGIN/register" method = "POST">
+                    <h1></h1> 
+                    
+                    <p> 
+                        <label for="emailsignup" class="youmail" data-icon="e" > Vasa e-adresa</label>
+                        <input id="emailsignup" name="email" required="required" type="text" placeholder="email"/> 
+                    </p>
+                    <p> 
+                        <label for="passwordsignup" class="youpasswd" data-icon="p">Vasa sifra </label>
+                        <input id="passwordsignup" name="password" required="required" type="password" placeholder="password"/>
+                    </p>
+                    
+                    <p class="signin button"> 
+                        <input type="submit" value="Registrujte se"/> 
+                    </p>
+                    <p class="change_link">  
+                      Vec ste clan ?
+                      <a href="#tologin" class="to_register"> Prijavite se </a>
+                    </p>
+                  </form> 
+            </div>
+            
+        </div>
+    </div> 
+            </section>
+        </div>
+
+<!--<script>
+function myFunction(){
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+               axios.post('http://738t121.mars-e1.mars-hosting.com/FORME%20ZA%20LOGIN/login',{params:{email:email,password:password}}).then(function(response));
+if(response.data.result == 'ok')  {
+    document.getElementById("demo").innerHTML = "Good day!";
+}
+};
+   
+/*            function myFunction() {
+              
+               var email = document.getElementById('email').value;
+               var password = document.getElementById('password').value;
+               axios.post('http://738t121.mars-e1.mars-hosting.com/FORME%20ZA%20LOGIN/login',{params:{email:email,password:password}}).then(function(response){
+                   console.log(response)
+                   if(response.data.result == 'ok'){
+                      open("http://738t121.mars-e1.mars-hosting.com/KVIZ/izaberi.html");
+                   } 
+               })
+            } */
+        </script>-->
+    </body>
+</html>

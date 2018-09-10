@@ -1,0 +1,35 @@
+
+body{
+	
+	background: url("../images/bg.jpg") no-repeat center fixed;	
+	background-size: cover;
+	-webkit-background-size:cover;
+
+}
+h1{
+   position: absolute;
+   left: 0;
+   padding-top: 3%;
+   width: 100%;
+   text-align: center;
+   
+}
+div{
+   position: fixed;
+   bottom:0;
+   width: 100%;
+   text-align: center;  
+   padding-bottom: 15%;
+
+}
+
+.pic{
+	padding: 15px;
+	transition: transform 0.2s;
+	
+}
+
+.pic:hover{
+	transform: scale(1.08);
+	
+}
